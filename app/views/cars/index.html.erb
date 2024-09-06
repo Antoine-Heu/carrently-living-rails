@@ -1,6 +1,22 @@
-<h1>Cars</h1>
-<p>Find me in app/views/cars/index.html.erb</p>
+<h2>Cars</h2>
+<p>Choose one that suits you:</p>
 
 <% @cars.each do |car|%>
-  <%= render "car_card" %>
+  <div class="car_card">
+    <div id="link-card"><%= link_to car_path(car) do %></div>
+      <div class="car-card">
+        <div class="align-self-center">
+          <div id="brand">
+            <h3 class="align-self-center"><%= car.brand %></h3>
+          </div>
+          <div id="model">
+            <p class="align-self-center"><%= car.model %></p>
+          </div>
+          <div id="price_per_day">
+            <p class="align-self-center"><strong><%= car.price_per_day %>/jour</strong></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 <% end %>

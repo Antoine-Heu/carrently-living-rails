@@ -1,0 +1,68 @@
+@import "../config/colors";
+
+.button-custom {
+  background-color: $dark-blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  &:hover {
+    opacity: 0.7;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.button-back {
+  background-color: #FFC300;
+  color: #001d3d;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  &:hover {
+    opacity: 0.7;
+    color: #003566;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.big-button {
+  background-color: $dark-blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  font-size: 32px;
+  &:hover {
+    opacity: 0.7;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
