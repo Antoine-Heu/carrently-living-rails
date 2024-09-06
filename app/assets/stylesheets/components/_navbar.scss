@@ -1,6 +1,10 @@
+@import "../config/colors";
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: $dark-blue;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar-lewagon .navbar-collapse {

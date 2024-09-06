@@ -1,8 +1,9 @@
-<h2>Cars</h2>
-<p>Choose one that suits you:</p>
-
-<% @cars.each do |car|%>
-  <div class="car_card">
+<div class="title">
+  <h2><strong>All cars</strong></h2>
+  <h5>Choose one that suits you:</h5>
+</div>
+<div class="car-grid">
+  <% @cars.each do |car|%>
     <div id="link-card"><%= link_to car_path(car) do %></div>
       <div class="car-card">
         <div class="align-self-center">
@@ -18,5 +19,5 @@
         </div>
       </div>
     <% end %>
-  </div>
-<% end %>
+  <% end %>
+</div>
