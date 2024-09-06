@@ -1,12 +1,20 @@
-<h2> Take a closer look </h2>
-
-<h3><%= @car.brand %> - <%= @car.model %></h3>
-
-<%= link_to "Back to cars", cars_path, class: "button-back" %>
-
-<p>Rent this car for only <%= @car.price_per_day %> a day !</p>
-<p>Initial traffic release for this beauty: <%= @car.year_of_production %>.</p>
-
-<p>Here are some more details: </p>
-
-<%= link_to "Book", new_car_booking_path(@car), class: "button-custom" %>
+<div class="flexbox">
+  <div class="flex-items">
+    <h2> Take a closer look </h2>
+  </div>
+  <div class="flex-items">
+    <h3><%= @car.brand %> - <%= @car.model %></h3>
+  </div>
+  <div class="flex-items">
+    <%= link_to "Back to cars", cars_path, class: "button-back" %>
+  </div>
+  <div class="flex-items">
+    <p>Rent this car for only <%= @car.price_per_day %> a day !</p>
+  </div>
+  <div class="flex-items">
+    <p>Initial traffic release for this beauty: <%= @car.year_of_production %>.</p>
+  </div>
+  <div class="flex-items">
+    <%= link_to "Book", new_car_booking_path(@car), class: "button-custom" %>
+  </div>
+</div>

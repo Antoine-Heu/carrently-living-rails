@@ -12,6 +12,7 @@ class BookingsController < ApplicationController
     @booking.car = @car
     @booking.user = current_user
     if @booking.save
+      @booking.update(accepted: true)
       redirect_to car_path(@car), notice: "Booking request sent!"
     else
       render :new
